@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-
 public class buttondotweentest : MonoBehaviour {
 
-	[SerializeField]
-	private bool click = false;
+	// Dotween移動目標位置
+	private Vector3 targetPos;
 
-	private Vector2 targetPos;
-
+	// Dotween移動速度
 	[Range(0.0f,10.0f), SerializeField]
 	private float _moveduration = 1f;
+
+	// Dotween移動方式
 	[SerializeField]
 	private Ease _moveEase;
 
@@ -26,13 +26,12 @@ public class buttondotweentest : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	public void Buttontouch () {
-			if(click = !click){
+	public void Buttontouch (bool click) {
+			if(click){
 				transform.DOPlayForward();
 			}
 			else{
 				transform.DOPlayBackwards();
-
 			}
 	}
 }

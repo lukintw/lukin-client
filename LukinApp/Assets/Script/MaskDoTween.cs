@@ -11,27 +11,21 @@ public class MaskDoTween : MonoBehaviour {
 	
 	[SerializeField]
 	private float _fadeduration = 0.1f;
-	private bool click = false;
 	// Use this for initialization
 	void Start () {
-		
-		Tweener tweenpanel = this.transform.GetComponent<Image>().DOFade(_fadenumber,_fadeduration);
+		Tweener tweenpanel = transform.GetComponent<Image>().DOFade(_fadenumber,_fadeduration);
 	    tweenpanel.SetAutoKill(false);
         tweenpanel.Pause();  
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	public void masktween(bool click){
 		
-	}
-	public void masktween(){
-		
-			if(click = !click){
-				this.transform.GetComponent<Image>().DOPlayForward();
+			if(click){
+				transform.GetComponent<Image>().DOPlayForward();
 			}
 			else{
-				this.transform.GetComponent<Image>().DOPlayBackwards();
+				transform.GetComponent<Image>().DOPlayBackwards();
 			}
-			this.transform.GetComponent<Image>().raycastTarget = click;
+			transform.GetComponent<Image>().raycastTarget = click;
 	}
 }
