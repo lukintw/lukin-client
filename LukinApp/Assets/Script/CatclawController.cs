@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class CatclawController : MonoBehaviour {
 
-	public GameObject mask;
-	public GameObject[] catclaw;
-	public bool click = false;
+	[SerializeField]
+	private GameObject mask;
+	[SerializeField]
+	private GameObject[] catclaw;
+	private bool click = false;
 
 	// Update is called once per frame
 	public void menuclick () {

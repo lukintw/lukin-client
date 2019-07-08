@@ -18,6 +18,7 @@ public class PanelController : MonoBehaviour {
 	void Start () {
 		foreach(Transform _panel in _panelName){
 			if(_panel != null){
+				_panel.gameObject.SetActive(true);
 				_panel.localScale = new Vector3(0,0,0);
 				Tweener tweenPanel = _panel.DOScale(new Vector3(1,1,1),_moveduration).SetEase(_moveEase);
 				tweenPanel.SetAutoKill(false);

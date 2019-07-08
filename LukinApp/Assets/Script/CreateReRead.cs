@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CreateImageText : MonoBehaviour {
+public class CreateReRead : MonoBehaviour {
 
 	[MenuItem("GameObject/UI/Text")]
 	static void CreatText()

@@ -46,8 +46,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CatclawController.cs" />
-     <Compile Include="Assets\CircleButton.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleAudio.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModulePhysics2D.cs" />
@@ -55,10 +53,11 @@
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUI.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Modules\DOTweenModuleUtils.cs" />
-     <Compile Include="Assets\PanelController.cs" />
-     <Compile Include="Assets\Script\CreateImageText.cs" />
+     <Compile Include="Assets\Script\CatclawController.cs" />
+     <Compile Include="Assets\Script\CircleButton.cs" />
+     <Compile Include="Assets\Script\CreateReRead.cs" />
      <Compile Include="Assets\Script\MaskDoTween.cs" />
-     <Compile Include="Assets\Script\SwitchScene.cs" />
+     <Compile Include="Assets\Script\PanelController.cs" />
      <Compile Include="Assets\Script\buttondotweentest.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
  <Reference Include="UnityEngine.UI">

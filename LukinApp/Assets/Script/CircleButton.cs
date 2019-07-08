@@ -12,8 +12,4 @@ public class CircleButton : MonoBehaviour {
         image.alphaHitTestMinimumThreshold = 0.1f;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
