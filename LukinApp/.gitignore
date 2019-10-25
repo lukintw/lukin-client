@@ -1,6 +1,7 @@
 # unity ignore dir
 /[Bb]in/
 /[Ll]ibrary/
+/[Ll]ibrary/[Mm]etadata/
 /[Tt]emp/
 /[Oo]bj/
 
