@@ -1,7 +1,9 @@
 fileFormatVersion: 2
 guid: ef475732fc6154f3490feed9911a876d
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: pet-folder_0
+    21300002: pet-folder_1
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -40,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -82,11 +84,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pet-folder_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 54
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159a3ad79b25549a0b0f70167863b18b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pet-folder_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 698
+        height: 1122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67da59d22227f4800882388e3f1b2ee2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bedcd49d85a1541f1b9a00dee491f4f3
     vertices: []
     indices: 
     edges: []
