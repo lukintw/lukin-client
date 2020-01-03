@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MenuController : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject[] catclaw;
+    public GameObject[] catclaw;
     private bool click = false;
 
     void Start()

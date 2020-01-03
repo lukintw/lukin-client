@@ -7,8 +7,7 @@ public class MailDotween : MonoBehaviour
 {
     // Dotween移動目標位置
     private Vector3 targetPos;
-    [SerializeField]
-    private Transform _mailboxPos;
+    public Transform _mailboxPos;
 
     // Dotween移動速度
     [Range(0.0f, 3.0f), SerializeField]
