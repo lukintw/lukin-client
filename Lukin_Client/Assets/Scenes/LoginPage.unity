@@ -3463,8 +3463,9 @@ GameObject:
   - component: {fileID: 833911555}
   - component: {fileID: 833911554}
   - component: {fileID: 833911556}
+  - component: {fileID: 833911557}
   m_Layer: 5
-  m_Name: animator
+  m_Name: LogoAnimator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3543,6 +3544,19 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &833911557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 833911552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae1db212febbc4ca1959949f7efdba51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 3
 --- !u!1 &837590182
 GameObject:
   m_ObjectHideFlags: 0
@@ -4424,6 +4438,7 @@ GameObject:
   - component: {fileID: 995766428}
   - component: {fileID: 995766427}
   - component: {fileID: 995766430}
+  - component: {fileID: 995766431}
   m_Layer: 5
   m_Name: Login_btn
   m_TagString: Untagged
@@ -4489,18 +4504,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 995766428}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 995766430}
-        m_MethodName: touch
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: MainPage
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &995766428
@@ -4552,6 +4556,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3bf670bf13604066aee8b32bd6406e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextScene: 2
+--- !u!114 &995766431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995766425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4609697a7721247c98446d99d241b7b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 196a28fc2f397462f962fa68b0ee0168, type: 3}
 --- !u!1 &995986655
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427135, b: 0.56452316, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -514,7 +514,7 @@ MonoBehaviour:
         isActive: 1
         layerSource:
           Name: Streets
-          Id: mapbox://styles/philiphung/cjyyj1gnv013e1cqlge1avg63
+          Id: mapbox://styles/philiphung/cjyykcw6n3wzr1dl362ak6jzd
           Modified: 
           UserName: 
       rasterOptions:
@@ -589,7 +589,7 @@ MonoBehaviour:
         Modified: 
         UserName: 
       performanceOptions:
-        isEnabled: 1
+        isEnabled: 0
         entityPerCoroutine: 20
       vectorSubLayers: []
       locationPrefabList: []

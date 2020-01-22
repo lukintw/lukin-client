@@ -25,7 +25,7 @@ public class GameLoop : MonoBehaviour
             Destroy(this.gameObject);
 
         // 初始化
-        Object.DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
 
         // 判斷手機內部是否有儲存的遊戲帳戶資料
 
@@ -47,6 +47,7 @@ public class GameLoop : MonoBehaviour
         if(_nowSceneState != _nextSceneState){
             _nowSceneState = _nextSceneState;
             SceneManager.LoadScene(_nextSceneState.ToString());
+            MusicManager.Instance.ChangeMusic(_nextSceneState);
             // SceneChange(_nextSceneState.ToString());
         }
     }
