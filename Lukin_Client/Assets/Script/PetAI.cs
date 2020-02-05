@@ -9,15 +9,16 @@ public class PetAI : MonoBehaviour
     public GameObject _pet = null;
     public Animator _petAni = null;
     public NavMeshAgent _petNav = null;
-    public float _petMoveSpeed = 5f;
-    
+    public float _petAniSpeed = 1f;
+    public float _petMoveSpeed = 3f;
+
     public enum _petState { idle, walk, run, eatting, touch, excited };
     public _petState nowPetState = _petState.idle;
     public _petState nextPetState = _petState.idle;
     public bool _petIsWalk = false;
     public float minTimer = 3.0f;
     public float maxTimer = 5.0f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,57 +37,61 @@ public class PetAI : MonoBehaviour
     void Update()
     {
         // 點擊
-        if(Input.GetMouseButtonDown(0)){
+        if (Input.GetMouseButtonDown(0))
+        {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                if(hit.transform.name == "sealskin")
+                if (hit.transform.name == _pet.name)
                 {
                     touchPet();
                 }
-                else if(hit.transform.name == "Plane")
+                else if (hit.transform.name == "Plane")
                 {
                     touchPlane();
                 }
             }
         }
-        if(nowPetState != nextPetState){
+        if (nowPetState != nextPetState)
+        {
             nowPetState = nextPetState;
             AI();
         }
-        
-        if(_petNav.remainingDistance <= _petNav.stoppingDistance && !_petNav.pathPending && nowPetState != _petState.touch)
+
+        if (_petNav.remainingDistance <= _petNav.stoppingDistance && !_petNav.pathPending && nowPetState != _petState.touch)
             nextPetState = _petState.idle;
     }
 
     private Coroutine nowIEnumerator = null;
-    public void AI(){
-        if(nowIEnumerator != null){
-            _petAni.SetBool("touch",false);
+    public void AI()
+    {
+        if (nowIEnumerator != null)
+        {
+            _petAni.SetBool("touch", false);
             StopCoroutine(nowIEnumerator);
         }
         // idle  發呆
         if (nowPetState == _petState.idle)
         {
-            Debug.Log("=========== IDLE =========");
+            // Debug.Log("=========== IDLE =========");
             nowIEnumerator = StartCoroutine(IdleTime(Random.Range(minTimer, maxTimer)));
         }
         //walk  走路
         if (nowPetState == _petState.walk)
         {
-            Debug.Log("=========== WALK =========");
+            // Debug.Log("=========== WALK =========");
             nowIEnumerator = StartCoroutine(WalkTime());
         }
         //run   跑步
         if (nowPetState == _petState.run)
         {
-            Debug.Log("=========== RUN =========");
+            // Debug.Log("=========== RUN =========");
             nowIEnumerator = StartCoroutine(RunTime());
         }
         //touch     玩家點擊
         if (nowPetState == _petState.touch)
         {
-            Debug.Log("=========== TOUCH =========");
+            // Debug.Log("=========== TOUCH =========");
             nowIEnumerator = StartCoroutine(TouchTime(2f));
         }
         //eatting   餵食
@@ -102,9 +107,11 @@ public class PetAI : MonoBehaviour
     }
 
     // 移動動畫控制
-    private void setAnimatorSpeed(string name, float speed){
-        if(name == "speed"){
-            if(speed != 0)
+    private void setAnimatorSpeed(string name, float speed)
+    {
+        if (name == "speed")
+        {
+            if (speed != 0)
                 _petAni.speed = speed;
             else
                 _petAni.speed = 1;
@@ -114,11 +121,13 @@ public class PetAI : MonoBehaviour
 
 
     // 玩家點擊寵物用
-    public void touchPet(){
+    public void touchPet()
+    {
         nextPetState = _petState.touch;
     }
     // 玩家點擊地面用
-    public void touchPlane(){
+    public void touchPlane()
+    {
         nextPetState = _petState.run;
     }
     //==============================================
@@ -132,8 +141,8 @@ public class PetAI : MonoBehaviour
     }
     private IEnumerator WalkTime()
     {
-        setAnimatorSpeed("speed", 0.5f);
-        _petNav.speed = _petMoveSpeed/2;
+        setAnimatorSpeed("speed", _petAniSpeed / 2);
+        _petNav.speed = _petMoveSpeed / 2;
         Vector3 randomPos = Random.insideUnitSphere * 5f;
         NavMeshHit navhit;
         NavMesh.SamplePosition(transform.position + randomPos, out navhit, 5f, NavMesh.AllAreas);
@@ -145,7 +154,7 @@ public class PetAI : MonoBehaviour
     }
     private IEnumerator RunTime()
     {
-        setAnimatorSpeed("speed", 1f);
+        setAnimatorSpeed("speed", _petAniSpeed);
         _petNav.speed = _petMoveSpeed;
         // 設定位置移動
         _petNav.SetDestination(hit.point);
@@ -157,10 +166,10 @@ public class PetAI : MonoBehaviour
     {
         // 停止移動
         setAnimatorSpeed("speed", 0f);
-        _petAni.SetBool("touch",true);
+        _petAni.SetBool("touch", true);
 
         yield return new WaitForSeconds(time);
-        _petAni.SetBool("touch",false);
+        _petAni.SetBool("touch", false);
         nextPetState = _petState.idle;
     }
 
