@@ -143,11 +143,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BGMusic:
-  - {fileID: 0}
-  - {fileID: 8300000, guid: 17ddf662074a24b6da7af320cc11f830, type: 3}
-  - {fileID: 8300000, guid: 17ddf662074a24b6da7af320cc11f830, type: 3}
-  - {fileID: 8300000, guid: 1e259dc31639042af902ef8207cfda1b, type: 3}
-  - {fileID: 8300000, guid: 1e259dc31639042af902ef8207cfda1b, type: 3}
+  - {fileID: 8300000, guid: 4866f8245081c40bfb602ef09a51a110, type: 3}
+  - {fileID: 8300000, guid: 376518a6aa88c481495e7e98389886ef, type: 3}
+  - {fileID: 8300000, guid: 4866f8245081c40bfb602ef09a51a110, type: 3}
+  - {fileID: 8300000, guid: fae19e72338bb4356a77265e3664f320, type: 3}
+  - {fileID: 8300000, guid: b853e14493eae4f6e93bc9d9830a21ca, type: 3}
 --- !u!4 &67147201
 Transform:
   m_ObjectHideFlags: 0

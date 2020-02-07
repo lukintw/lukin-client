@@ -40029,11 +40029,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: rice
       objectReference: {fileID: 0}
-    - target: {fileID: 607245377787668041, guid: 10b2c0944f358448c9da90a3799416ab,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 607245377788164713, guid: 10b2c0944f358448c9da90a3799416ab,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40102,6 +40097,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: bomb
+      objectReference: {fileID: 0}
+    - target: {fileID: 1379688519251373531, guid: 6d15e8f05fdcb4d788a0b3716b6dd166,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1379688519251669499, guid: 6d15e8f05fdcb4d788a0b3716b6dd166,
         type: 3}
@@ -40172,11 +40172,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: sealskin
       objectReference: {fileID: 0}
-    - target: {fileID: 2005778397178859705, guid: ede64ecbe4a0d4c2189bc02fa76757eb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2005778397178367129, guid: ede64ecbe4a0d4c2189bc02fa76757eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40245,11 +40240,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: dry
-      objectReference: {fileID: 0}
-    - target: {fileID: 4477473419999898443, guid: aad1ec8ebfbe24b4eb2783060eea4903,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4477473420000327531, guid: aad1ec8ebfbe24b4eb2783060eea4903,
         type: 3}
@@ -40320,11 +40310,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: cat
       objectReference: {fileID: 0}
-    - target: {fileID: 5543265558506223281, guid: 33bb8d1556bf34ea8af88d0bfa8b2038,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5543265558506253009, guid: 33bb8d1556bf34ea8af88d0bfa8b2038,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40380,11 +40365,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5543265558511434719, guid: 33bb8d1556bf34ea8af88d0bfa8b2038,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 125575443f0624a5081c6f1aa80e1870, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33bb8d1556bf34ea8af88d0bfa8b2038, type: 3}
 --- !u!1001 &6497300197933365251
@@ -40398,11 +40378,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: molar
-      objectReference: {fileID: 0}
-    - target: {fileID: 6497300198559801194, guid: 94f26541a3420411d9331c14ce2eaa2a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6497300198559892298, guid: 94f26541a3420411d9331c14ce2eaa2a,
         type: 3}

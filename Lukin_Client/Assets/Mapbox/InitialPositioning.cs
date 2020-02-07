@@ -17,7 +17,6 @@ public class InitialPositioning : MonoBehaviour
     void Start()
     {
         if(!Instance){
-            Debug.Log("123");
             Instance = this;
         }
     }
