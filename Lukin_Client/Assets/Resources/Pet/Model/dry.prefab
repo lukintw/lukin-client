@@ -201,7 +201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4477473420000327531
 Transform:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ Transform:
   m_GameObject: {fileID: 4477473419999898443}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.05, y: 0, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 4477473420000327539}
   - {fileID: 4477473420000327547}
@@ -290,7 +290,7 @@ MonoBehaviour:
   _petAni: {fileID: 0}
   _petNav: {fileID: 0}
   _petAniSpeed: 1
-  _petMoveSpeed: 3
+  _petMoveSpeed: 20
   nowPetState: 0
   nextPetState: 0
   _petIsWalk: 0

@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5543265558506223281}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -0.05, y: 0, z: 0}
-  m_LocalScale: {x: 7, y: 7, z: 7}
+  m_LocalScale: {x: 20, y: 20, z: 20}
   m_Children:
   - {fileID: 5543265558506253055}
   - {fileID: 5543265558506253053}
@@ -107,7 +107,7 @@ MonoBehaviour:
   _petAni: {fileID: 0}
   _petNav: {fileID: 0}
   _petAniSpeed: 1
-  _petMoveSpeed: 3
+  _petMoveSpeed: 20
   nowPetState: 0
   nextPetState: 0
   _petIsWalk: 0
