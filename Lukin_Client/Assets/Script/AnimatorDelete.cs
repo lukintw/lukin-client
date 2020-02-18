@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AnimatorDelete : MonoBehaviour
 {
-    public float timer;
+    public float timer = 3f;
     // Start is called before the first frame update
     void Start()
     {
